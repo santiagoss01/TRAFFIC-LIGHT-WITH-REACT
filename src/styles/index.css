@@ -1,5 +1,5 @@
 body{
-  background-color:lemonchiffon;
+  background-color:rgb(13, 13, 58);
 }
 
 
@@ -54,30 +54,35 @@ body{
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: currentColor;
+  
   opacity: 80%;  
-  cursor: pointer;
   box-shadow: inset 13px 6px 0 white;
   opacity: 80%;  
-  cursor: pointer;
   box-shadow: inset 5px 4px 0 white;
+  cursor:grab;
       
 }
 
 .rojo{
     background-color: rgb(216, 69, 69);
+    opacity: 70%;
    
 }
 .amarillo{
     background-color: rgb(250, 189, 77);
+    opacity: 70%;
    
 }
 .verde{
     background-color: rgb(85, 245, 85);
+    opacity: 70%;
    
 }
 .sombra{
+  cursor: pointer;
   box-shadow:  -2px 0px 20px 10px rgb(246, 190, 49); 
+  opacity: 100%;
+  
 }
 .morado {
     background-color: blueviolet;

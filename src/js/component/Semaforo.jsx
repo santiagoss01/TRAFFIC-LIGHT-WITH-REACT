@@ -19,25 +19,19 @@ const Semaforo = () => {
 				onClick={() => colorSelector(ColorName)}></div>
 		));
 
-	// const AutomaticCycle = () => {
-	// 	let ColorIndex = 0;
+	 const semaforoAutomatico = () => {
+	 	let Index = 0;
 
-	// 	setInterval(() => {
-	// 		if (ColorIndex <= AvailableColors.length) {
-	// 			HandleLight(AvailableColors[ColorIndex]);
-	// 			ColorIndex++;
-	// 		} else {
-	// 			return false;
-	// 		}
-	// 	}, 500);
-	// };
+	 	setInterval(() => {
+	 		if (Index <= Allcolors.length) {
+				colorSelector(Allcolors[Index]);
+	 			Index++;
+	 		} else {
+	 			return false;
+	 		}
+	 	}, 500);
+	 };
 
-	// const AddNewLightColor = (NewColor) =>
-	// 	setAvailableColors(
-	// 		AvailableColors.includes(NewColor)
-	// 			? AvailableColors.filter((ColorName) => ColorName !== NewColor)
-	// 			: [...AvailableColors, NewColor]
-	// 	);
 
 	return (
 		<>
@@ -48,6 +42,8 @@ const Semaforo = () => {
 				{Lights()}
 			</div>
 			<div className="m-auto bg-warning" id="postedeluz"></div>
+			<button type="button" onClick={()=>{semaforoAutomatico()}} class="btn btn-primary px-3"><i class="fas fa-star pr-2" aria-hidden="true"></i></button>
+			 
 			
 
 		</>
