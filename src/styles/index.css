@@ -1,12 +1,88 @@
+body{
+  background-color:lemonchiffon;
+}
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+#app{
+ height: fit-content;
+}
 
-*/
+#postedeluz {
+    width: 13px;
+    height: 250px;
+    box-shadow: 2.5px 1px 0px 1px rgb(182 182 182);
+  }
+  
+  #luces {
+    width: fit-content;
+    position: relative;
+    border-radius: 17px;
+    box-shadow: 3px 3px 0px 1px rgb(182 182 182);
+   
+  }
+#road{
+  height: fit-content;
+  height: 150px;
+}
+#line{
+  height: 30px;
+  width: 200px;
+  border-style: dashed;
+  border-color: antiquewhite;
+
+
+}
+#linetwo{
+  height: 30px;
+  width: 200px;
+    border-style: dashed;
+  border-color: antiquewhite;
+  right: 500px;
+  
+
+}
+
+
+
+  
+
+  
+.circulo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 80%;  
+  cursor: pointer;
+  box-shadow: inset 13px 6px 0 white;
+  opacity: 80%;  
+  cursor: pointer;
+  box-shadow: inset 5px 4px 0 white;
+      
+}
+
+.rojo{
+    background-color: rgb(216, 69, 69);
+   
+}
+.amarillo{
+    background-color: rgb(250, 189, 77);
+   
+}
+.verde{
+    background-color: rgb(85, 245, 85);
+   
+}
+.sombra{
+  box-shadow:  -2px 0px 20px 10px rgb(246, 190, 49); 
+}
+.morado {
+    background-color: blueviolet;
+}
+
+
+
+
