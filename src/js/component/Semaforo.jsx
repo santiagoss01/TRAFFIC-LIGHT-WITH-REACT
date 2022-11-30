@@ -13,38 +13,51 @@ const Semaforo = () => {
 				key={Index}
 				className={
 					"circulo " +
-				     ColorName +
+					ColorName +
 					(ActiveChoice === ColorName ? " sombra" : "")
 				}
 				onClick={() => colorSelector(ColorName)}></div>
 		));
 
-	 const semaforoAutomatico = () => {
-	 	let Index = 0;
+	const semaforoAutomatico = () => {
+		let Index = 0;
 
-	 	setInterval(() => {
-	 		if (Index <= Allcolors.length) {
+		setInterval(() => {
+			if (Index <= Allcolors.length) {
 				colorSelector(Allcolors[Index]);
-	 			Index++;
-	 		} else {
-	 			return false;
-	 		}
-	 	}, 500);
-	 };
+				Index++;
+			} else {
+				return false;
+			}
+		}, 500);
+	};
+	const anotherColor=(someColor)=>{
+		
+			Allcolors.push(someColor);
+			Lights();
+
+		};
+		
+
+	
 
 
 	return (
-		<>
-		<br></br>		
+	<>
+			<br></br>
 			<div
 				className="d-flex flex-column justify-content-center align-items-center gap-2 m-auto p-2 bg-black"
 				id="luces">
 				{Lights()}
 			</div>
 			<div className="m-auto bg-warning" id="postedeluz"></div>
-			<button type="button" onClick={()=>{semaforoAutomatico()}} class="btn btn-primary px-3"><i class="fas fa-star pr-2" aria-hidden="true"></i></button>
-			 
-			
+			<button onClick={() => { semaforoAutomatico() }} id="intervalo" type="button" className="btn btn-warning waves-effect px-3"><i class="fas fa-bolt" aria-hidden="true"></i></button>
+			<button onClick={()=>{anotherColor("morado")}} id="newColor" type="button" class="btn btn-warning waves-effect"><i class="fas fa-star pr-2" aria-hidden="true"></i></button>
+
+
+
+
+
 
 		</>
 	);

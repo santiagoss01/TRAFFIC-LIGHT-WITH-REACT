@@ -1,5 +1,12 @@
 body{
-  background-color:rgb(13, 13, 58);
+  background-color:rgb(131, 182, 223);
+ 
+ 
+}
+h3{
+  color: goldenrod;
+  text-shadow: 1px 1px 2px pink;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -15,6 +22,7 @@ body{
   
   #luces {
     width: fit-content;
+    height: fit-content;
     position: relative;
     border-radius: 17px;
     box-shadow: 3px 3px 0px 1px rgb(182 182 182);
@@ -28,7 +36,7 @@ body{
   height: 30px;
   width: 200px;
   border-style: dashed;
-  border-color: antiquewhite;
+  border-color:white;
 
 
 }
@@ -36,7 +44,7 @@ body{
   height: 30px;
   width: 200px;
     border-style: dashed;
-  border-color: antiquewhite;
+  border-color: white;
   right: 500px;
   
 
@@ -85,8 +93,22 @@ body{
   
 }
 .morado {
-    background-color: blueviolet;
+    background-color: rgb(109, 37, 177);
 }
+#intervalo{
+  position: absolute;
+  right: 720px;
+  bottom: 400px;
+
+}
+#newColor{
+  position: absolute;
+  right: 720px;
+  bottom: 330px;
+
+}
+
+
 
 
 
